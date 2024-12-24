@@ -4,3 +4,7 @@ on:
     branches:
       - dev
       - main
+  push:
+    branches-ignore:
+      - dev
+      - main
