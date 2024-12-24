@@ -3,6 +3,12 @@ on:
   pull_request:
     branches:
       - dev
-  workflow_dispatch:
+      - main
 
 
+jobs:
+  job:
+    name: require pull request
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello
