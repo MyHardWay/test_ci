@@ -4,7 +4,11 @@ on:
     branches:
       - dev
       - main
-  push:
-    branches-ignore:
-      - dev
-      - main
+
+
+jobs:
+  job:
+    name: require pull request
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello
